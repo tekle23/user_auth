@@ -18,7 +18,7 @@ function Nav() {
       {logged ? (
         <div className="dashboard">
          <Link to="/dashboard"> <h3>Dashboard</h3> </Link>
-          <h3>Logout</h3>
+          <h3 onClick={()=>setLogged(false)}>logout</h3>
           </div>
       ):(
         <div>
