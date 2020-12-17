@@ -32,6 +32,11 @@ function Login() {
     }
     return (
         <div className="Login">
+        {logged ? (
+        <Dashboard />
+       ) : (
+         <h3>Not Logged</h3>
+       ) }
         <h2>Login</h2>
             
             <form className="form">

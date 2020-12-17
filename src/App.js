@@ -10,6 +10,7 @@ import {
   Route
 } from "react-router-dom";
 import { UserContext } from './UserContext';
+import Dashboard from './Dashboard';
 function App() {
 
 const [user,setUser] = useState([{username:'admin',password:'admin',role:'admin'}]);
@@ -24,6 +25,8 @@ const [logged,setLogged] = useState(false);
        <Route path="/" exact>
          <Blog />
        </Route>
+       
+      
        <Route path="/login">
          <Login />
        </Route>      
