@@ -1,0 +1,10 @@
+.BlogContainer{
+    displa:flex;
+    margin:auto;
+    width: 80%;
+    
+}
+
+.BlogBody > p{
+    padding: 10px;
+} 
