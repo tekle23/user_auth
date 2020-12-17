@@ -1,4 +1,6 @@
 import React, { useContext, useState } from 'react'
+import { Redirect, Route } from 'react-router-dom';
+import Dashboard from './Dashboard';
 import './Login.css'
 import { UserContext } from './UserContext'
 function Login() {
@@ -6,13 +8,27 @@ function Login() {
     const [logged,setLogged] = useContext(UserContext);
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
+
     const login = (e) =>{
         e.preventDefault();
-       if(userName===user.username){
+       setLogged(true);
+        return (
+            <Route
+                path =
+            {
+                    logged ? (
+                       
+                             "/dashboard" 
+                        
+                    ) : (
+                            "/login"
+                        )
+                }
+                
+            />
+        )
            console.log('success');
-       }else{
-           console.log('error');
-       }
+       
     }
     return (
         <div className="Login">

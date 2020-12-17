@@ -12,7 +12,7 @@ import {
 import { UserContext } from './UserContext';
 function App() {
 
-const [user,setUser] = useState([{username:'admin',role:'admin'}]);
+const [user,setUser] = useState([{username:'admin',password:'admin',role:'admin'}]);
 const [logged,setLogged] = useState(false);
   return (
     
